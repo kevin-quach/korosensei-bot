@@ -6,7 +6,9 @@ var port = process.env.PORT || 1338;
 
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.get('/', function(req, res) {res.status(200).send('Hello Wurld!'); })
+app.get('/', function(req, res) {
+	res.status(200).send('Hello Wurld!'); 
+});
 
 app.listen(port,function() {
 	console.log('Listening on port' + port);
@@ -24,5 +26,4 @@ app.post('/hello', function(req,res,next) {
 	else {
 		return res.status(200).end();
 	}
-
 });
