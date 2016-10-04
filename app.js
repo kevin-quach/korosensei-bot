@@ -3,13 +3,14 @@ var bodyParser  = require('body-parser');
 var korosensei  = require('./korosensei.json');
 
 var app = express();
-var port = process.env.PORT || 1344;
+var port = process.env.PORT || 1345;
 var responses = korosensei.responses;
+var wordBank = generateTriggerWordString();
 
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', function(req, res) {
-	res.status(200).send('Hello Wurld!'); 
+	res.status(200).send('Welcome to Korosensei Bot!\n===================\nPlease paste the text below into the trigger word input field in your korosensei bot integration! \n\n' + wordBank); 
 });
 
 app.listen(port,function() {
@@ -25,7 +26,7 @@ app.post('/hello', function(req,res,next) {
 
 	for(var i = 0; i < responses.length; i++) {
 		if(trigger == responses[i].trigger) {
-			botPayload.text = responses[i].message.replace("__", username);
+			botPayload.text = responses[i].message.replace("__", userwhoname);
 		}
 	}
 
@@ -40,6 +41,16 @@ app.post('/hello', function(req,res,next) {
 		return res.status(200).end();
 	}
 });
+
+function generateTriggerWordString() {
+	var str = "";
+
+	for(var i = 0; i < responses.length; i++) {
+		str += responses[i].message + ",";
+	}
+
+	return str;
+}
 
 
 
