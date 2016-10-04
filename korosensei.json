@@ -1,0 +1,16 @@
+{
+	"responses": [
+		{
+			"trigger": "hello korosensei",
+			"message": "Hello __, my precious student!"
+		},
+		{
+			"trigger": "korosensei help me",
+			"message": "IM COMING TO YOUR RESCUE __!"
+		},
+		{
+			"trigger": "korosensei teach me",
+			"message": "What would you like to learn __?"
+		}
+	]
+}

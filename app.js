@@ -1,8 +1,10 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+var express     = require('express');
+var bodyParser  = require('body-parser');
+var korosensei  = require('./korosensei.json');
 
 var app = express();
-var port = process.env.PORT || 1338;
+var port = process.env.PORT || 1342;
+var responses = korosensei.responses;
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -14,11 +16,18 @@ app.listen(port,function() {
 	console.log('Listening on port' + port);
 });
 
+
 app.post('/hello', function(req,res,next) {
-	var username = req.body.user_name;
-	var botPayload = {
-		text: 'Hello' + username + ', my precious student!'
-	};
+	var username = req.body.user_name,
+			trigger = req.body.trigger_word,
+			channel = req.body.channel_name,
+			botPayload = {};
+
+	for(var i = 0; i < responses.length; i++) {
+		if(trigger == responses[i].trigger) {
+			botPayload.text = responses[i].message.replace("__", name);
+		}
+	}
 
 	if(username !== 'slackbot') {
 		return res.status(200).json(botPayload);
@@ -27,3 +36,9 @@ app.post('/hello', function(req,res,next) {
 		return res.status(200).end();
 	}
 });
+
+
+
+
+
+
