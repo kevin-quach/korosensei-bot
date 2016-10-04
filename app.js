@@ -25,7 +25,7 @@ app.post('/hello', function(req,res,next) {
 
 	for(var i = 0; i < responses.length; i++) {
 		if(trigger == responses[i].trigger) {
-			botPayload.text = responses[i].message.replace("__", name);
+			botPayload.text = responses[i].message.replace("__", username);
 		}
 	}
 
