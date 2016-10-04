@@ -1,0 +1,13 @@
+{
+	"name": "korosensei-bot",
+	"version": "0.0.1",
+	"description": "A korosensei bot for slack",
+	"main": "app.js",
+	"author": "Kevin Quach",
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.x.x",
+		"body-parser": "^1.x.x",
+		"request": "2.56.x"
+	}
+}
