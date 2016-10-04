@@ -10,7 +10,7 @@ var wordBank = generateTriggerWordString();
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', function(req, res) {
-	res.status(200).send('Welcome to Korosensei Bot!\n===================\nPlease paste the text below into the trigger word input field in your korosensei bot integration! \n\n' + wordBank); 
+	res.status(200).send('Welcome to Korosensei Bot!<br>===================<br>Please paste the text below into the trigger word input field in your korosensei bot integration! <br><br>' + wordBank); 
 });
 
 app.listen(port,function() {
@@ -46,7 +46,7 @@ function generateTriggerWordString() {
 	var str = "";
 
 	for(var i = 0; i < responses.length; i++) {
-		str += responses[i].message + ",";
+		str += responses[i].trigger + ",";
 	}
 
 	return str;
