@@ -1,4 +1,17 @@
 {
+	"lectures": {
+		"lecture": [
+			"The difference between the novice and the master is that the master has failed more times than the novice has tried.",
+			"Is anything ever truly wasted?",
+			"Exams are an opportunity to teach correctly the meaning of winning and losing, of strong and weak. Students soak up heaping helpings of successes and setbacks! Take in now what it means to win, what it means to lose!",
+			"Please remember that there are times to take someone's hand and lead them along... But also times when you must be stern and let them fend for themselves.",
+			"Whether a fish lives in a clear stream or a water ditch, so long as it continues swimming forward, it will grow up beautifully.",
+			"The world will always be filled with injustice. If you have time to give up or hold a grudge against that injustice, then use that time to enjoy battling those injustices instead.",
+			"Those who can't do what they have to when the time comes for action will find their presence fading in our classroom. An assassin who neglects to sharpen his blade is no assassin at all. He's just a boastful brat swinging around a rusty sword.",
+			"Tests are a good thing. The knowledge gained from a night of cramming will be all but forgotten once you hit adulthood. And that's fine. The experience you gain through competition, having sharpened your skills and broadened your minds all under the same set of rules? That's the real treasure.",
+			"If I wasn't prepared to be flexible as the situations demands, I wouldn't have become a teacher."
+		]
+	},
 	"responses": [
 		{
 			"trigger": "hello korosensei",
@@ -9,8 +22,8 @@
 			"message": "IM COMING TO YOUR RESCUE __!"
 		},
 		{
-			"trigger": "korosensei teach me",
-			"message": "What would you like to learn __?"
+			"trigger": "good night korosensei",
+			"message": "Good night __, see you bright and early tomorrow for class!"
 		}
 	]
 }
