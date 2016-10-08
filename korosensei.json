@@ -15,15 +15,58 @@
 	"responses": [
 		{
 			"trigger": "hello korosensei",
-			"message": "Hello __, my precious student!"
+			"message": [
+				"Hello __, my precious student!",
+				"It's great to see your smiling face __!",
+				"Hello __! Ready for a day of learning?",
+				"__, always happy to see me. Makes me feel like doing my best"
+			]
+		},
+		{
+			"trigger": "good morning korosensei",
+			"message": [
+				"good morning to you too __ :sun_with_face:",
+				"hiya __!",
+				"great to see you __!",
+				"ready for today's lesson __?",
+				"__!!, did you eat your breakfast yet? A growing mind needs a good breakfast! :bread:"
+			]
+		},
+		{
+			"trigger": "hi korosensei",
+			"message": [
+				"__! it's nice to see you!",
+				"hiya __!",
+				"great to see you __!",
+				"ready for today's lesson __?",
+			]
 		},
 		{
 			"trigger": "korosensei help me",
-			"message": "IM COMING TO YOUR RESCUE __!"
+			"message": [
+				"IM COMING TO YOUR RESCUE __!",
+				"My student needs me and I have to be there for __!",
+				"__, everything will be alright because I'm here!",
+				"I will not rest till I can be of help __!"
+			]
 		},
 		{
 			"trigger": "good night korosensei",
-			"message": "Good night __, my previous student :pinkkorosensei:! See you bright and early tomorrow for class! "
+			"message": [
+				"Good night __, my precious student :pinkkorosensei:! See you bright and early tomorrow for class! ",
+				"Great work today __! You sleep well, you deserve it.",
+				"Nighty night __!",
+				"W..what?! __, I didn't know you were still here -hides magazine- :pinkkorosensei:"
+			]
+		},
+		{
+			"trigger": "i'm bored korosensei",
+			"message": [
+				"Great! That means you'll have time to write that 30 page essay __?",
+				"A true assassin is never bored, but patient!",
+				"Bordem means you're ready to experience and grow!",
+				"I'm always free to help a student in need!"
+			]
 		}
 	]
 }
