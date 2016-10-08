@@ -28,12 +28,12 @@ app.post('/hello', function(req,res,next) {
 			botPayload = {};
 
 	if(trigger == "teach me korosensei") {
-		var rand = Math.floor((Math.random() * (korosensei.lectures.lecture.length - 1)));
+		var rand = Math.floor((Math.random() * (korosensei.lectures.lecture.length)));
 		botPayload.text = korosensei.lectures.lecture[rand];
 	}
 	else {
 		for(var i = 0; i < responses.length; i++) {
-			var rand = Math.floor((Math.random() * (responses[i].message.length - 1)));
+			var rand = Math.floor((Math.random() * (responses[i].message.length)));
 			if(trigger.toLowerCase() == responses[i].trigger) {
 				botPayload.text = responses[i].message[rand].replace("__", username);
 			}
