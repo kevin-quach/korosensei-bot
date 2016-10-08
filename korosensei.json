@@ -19,7 +19,8 @@
 				"Hello __, my precious student!",
 				"It's great to see your smiling face __!",
 				"Hello __! Ready for a day of learning?",
-				"__, always happy to see me. Makes me feel like doing my best"
+				"__, always happy to see me. Makes me feel like doing my best",
+				"__! My proudest student!"
 			]
 		},
 		{
@@ -36,9 +37,10 @@
 			"trigger": "hi korosensei",
 			"message": [
 				"__! it's nice to see you!",
-				"hiya __!",
+				"hi __!",
 				"great to see you __!",
 				"ready for today's lesson __?",
+				"hi __, working hard as always?"
 			]
 		},
 		{
@@ -65,7 +67,8 @@
 				"Great! That means you'll have time to write that 30 page essay __?",
 				"A true assassin is never bored, but patient!",
 				"Bordem means you're ready to experience and grow!",
-				"I'm always free to help a student in need!"
+				"I'm always free to help a student in need!",
+				"Nice tactic __! Trying to look like you have nothing to do so I lower my guard so you can go in for a sneak assassination!"
 			]
 		}
 	]
