@@ -3,7 +3,7 @@ var bodyParser  = require('body-parser');
 var korosensei  = require('./korosensei.json');
 
 var app = express();
-var port = process.env.PORT || 1346;
+var port = process.env.PORT || 1347;
 
 var responses = korosensei.responses;
 var lectures  = korosensei.lectures.lecture;
@@ -33,8 +33,9 @@ app.post('/hello', function(req,res,next) {
 	}
 	else {
 		for(var i = 0; i < responses.length; i++) {
-			if(trigger == responses[i].trigger) {
-				botPayload.text = responses[i].message.replace("__", username);
+			var rand Math.floor((Math.random() * (responses[i].message.length - 1)));
+			if(trigger.toLowerCase() == responses[i].trigger) {
+				botPayload.text = responses[i].message[rand].replace("__", username);
 			}
 		}
 	}
